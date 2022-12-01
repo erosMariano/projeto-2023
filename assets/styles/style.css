@@ -1,0 +1,104 @@
+*,
+html,
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hero {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-beautiful-color-cloud-banner-background-material-cloudcloudbubblemulticoloredposter-backgroundbanner-backgroundadbackgroundcolorful-image_52635.jpg");
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .logo {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 85px;
+  color: #fff;
+  z-index: 10;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.como-funciona {
+  max-width: 1256px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.como-funciona a {
+  background-color: rgb(30, 108, 147);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 11pt;
+  line-height: normal;
+  width: 264px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.content-como-funciona {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+.content-como-funciona img {
+  width: 500px;
+}
+.content-como-funciona h2 {
+  color: rgb(34, 110, 147);
+  font-size: 34pt;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+.content-como-funciona p {
+  color: rgb(33, 33, 33);
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 1.6667;
+  margin-top: 12px;
+}
+.content-como-funciona strong {
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    text-align: center;
+    font-size: 53px;
+  }
+  .como-funciona {
+    padding-bottom: 50px;
+  }
+  .content-como-funciona {
+    flex-direction: column;
+  }
+  .content-como-funciona img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
