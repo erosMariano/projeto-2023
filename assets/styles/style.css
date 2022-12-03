@@ -148,6 +148,7 @@ body {
   }
   .content-como-funciona ul {
     flex-direction: column;
+    gap: 8px;
   }
   .content-como-funciona ul img {
     margin: 0;
