@@ -5,10 +5,11 @@ body {
 }
 
 .hero {
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-beautiful-color-cloud-banner-background-material-cloudcloudbubblemulticoloredposter-backgroundbanner-backgroundadbackgroundcolorful-image_52635.jpg");
+  background-image: url("../images/banner.jpg");
   height: 340px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +46,7 @@ body {
   line-height: normal;
   width: 264px;
   height: 36px;
+  border: 1px solid rgb(30, 108, 147);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,24 +54,32 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 48px;
+  transition: 0.3s;
+}
+.como-funciona a:hover {
+  background-color: transparent;
+  color: rgb(30, 108, 147);
 }
 
 .content-como-funciona {
   display: flex;
   gap: 32px;
   margin-top: 24px;
+  align-items: flex-start;
 }
 .content-como-funciona img {
   width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .content-como-funciona h2 {
   color: rgb(34, 110, 147);
-  font-size: 34pt;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 1.2;
-  margin-top: 30px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
 }
 .content-como-funciona p {
   color: rgb(33, 33, 33);
@@ -81,17 +91,78 @@ body {
 .content-como-funciona strong {
   font-weight: 700;
 }
+.content-como-funciona ul {
+  margin: 24px 0;
+  display: flex;
+  gap: 24px;
+}
+.content-como-funciona li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.content-como-funciona li + li {
+  margin-top: 12px;
+}
+.content-como-funciona li img {
+  width: 16px;
+}
+.content-como-funciona h3 {
+  color: rgb(34, 110, 147);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 32px;
+}
 
-@media (max-width: 900px) {
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+.rodape strong {
+  font-weight: 700;
+}
+
+@media (max-width: 1045px) {
+  .content-como-funciona {
+    flex-direction: column;
+    gap: 0;
+  }
   .hero h1 {
     text-align: center;
     font-size: 53px;
   }
+  .content-como-funciona img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  .hero h1 {
+    margin-top: 50px;
+  }
   .como-funciona {
     padding-bottom: 50px;
+    gap: 48px;
+  }
+  .content-como-funciona ul {
+    flex-direction: column;
+  }
+  .content-como-funciona ul img {
+    margin: 0;
   }
   .content-como-funciona {
     flex-direction: column;
+    gap: 24px;
+  }
+  .content-como-funciona h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .content-como-funciona > img {
+    margin-top: 48px;
   }
   .content-como-funciona img {
     width: 100%;
